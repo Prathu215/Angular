@@ -1,0 +1,32 @@
+<div class="container">
+<h1>Registration Form</h1>
+
+<form action="" [formGroup]="registration">
+  <div class="row">
+    <div class="col-sm-2">
+      <label for="">First Name</label>
+    </div>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" formControlName="firstName" [(ngModel)]="bindedFirstName">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <label for="">Last Name</label>
+    </div>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" formControlName="lastName"  [(ngModel)]="bindedLastName" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <!-- <label for="">Last Name</label> -->
+    </div>
+    <div class="col-sm-9">
+      <!-- <input type="text" class="form-control" formControlName="lastName"  [(ngModel)]="bindedName" > -->
+      <label for="">{{bindedFirstName}} and {{bindedLastName}}</label>
+    </div>
+  </div>
+</form>
+  
+</div>
